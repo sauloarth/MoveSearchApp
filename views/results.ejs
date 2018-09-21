@@ -1,0 +1,10 @@
+<h1>Resultados</h1>
+<ul style="background:#232323; color:white">
+    <% if(filmes) { %>
+    <% filmes.forEach(filme => {%>
+        <li><strong><%=filme.Title%></strong> - <%=filme.Year%></li>
+    <% }) %>
+    <% } %>
+</ul>
+
+<a href="/search">Buscar Novamente</a>
